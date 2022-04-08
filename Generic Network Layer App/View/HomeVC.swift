@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("HomeVC loaded.")
-        fetchCryptos()
+      //  fetchCryptos()
     }
     
     func fetchRaM() {

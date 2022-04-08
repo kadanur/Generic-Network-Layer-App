@@ -9,11 +9,11 @@ import Foundation
 
 struct ListViewModel {
     var ramList = [RaMCharactersResult]()
-    var newsList: [NewsModel]?
-    var cryptoList: [CryptoCurrency]?
+    var newsList = [NewsModel]()
+    var cryptoList = [CryptoCurrency]()
     
     func countOfObjects() -> Int {
-        return self.ramList.count
+        return self.cryptoList.count
     }
 }
 
