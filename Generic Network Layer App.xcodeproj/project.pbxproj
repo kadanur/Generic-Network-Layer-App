@@ -13,6 +13,10 @@
 		BA92D9AE28004A76004E22CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA92D9AD28004A76004E22CC /* Assets.xcassets */; };
 		BA92D9B128004A76004E22CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA92D9AF28004A76004E22CC /* LaunchScreen.storyboard */; };
 		BA92D9BE28004B50004E22CC /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA92D9BD28004B50004E22CC /* WebService.swift */; };
+		BA92D9C028004EFF004E22CC /* RickAndMortyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA92D9BF28004EFF004E22CC /* RickAndMortyModel.swift */; };
+		BA92D9C228004F95004E22CC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA92D9C128004F94004E22CC /* HomeVC.swift */; };
+		BA92D9C4280057DC004E22CC /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA92D9C3280057DC004E22CC /* NewsModel.swift */; };
+		BA92D9C628005935004E22CC /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA92D9C528005935004E22CC /* CryptoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		BA92D9B028004A76004E22CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA92D9B228004A76004E22CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA92D9BD28004B50004E22CC /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		BA92D9BF28004EFF004E22CC /* RickAndMortyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyModel.swift; sourceTree = "<group>"; };
+		BA92D9C128004F94004E22CC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BA92D9C3280057DC004E22CC /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		BA92D9C528005935004E22CC /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				BA92D9AA28004A75004E22CC /* Main.storyboard */,
+				BA92D9C128004F94004E22CC /* HomeVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -85,6 +94,9 @@
 		BA92D9BA28004ABF004E22CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BA92D9BF28004EFF004E22CC /* RickAndMortyModel.swift */,
+				BA92D9C3280057DC004E22CC /* NewsModel.swift */,
+				BA92D9C528005935004E22CC /* CryptoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA92D9C4280057DC004E22CC /* NewsModel.swift in Sources */,
 				BA92D9BE28004B50004E22CC /* WebService.swift in Sources */,
+				BA92D9C628005935004E22CC /* CryptoModel.swift in Sources */,
+				BA92D9C228004F95004E22CC /* HomeVC.swift in Sources */,
 				BA92D9A528004A75004E22CC /* AppDelegate.swift in Sources */,
+				BA92D9C028004EFF004E22CC /* RickAndMortyModel.swift in Sources */,
 				BA92D9A728004A75004E22CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
