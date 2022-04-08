@@ -15,8 +15,8 @@ class WebService {
     }
     
     enum NetworkError {
-        case unknown
-        case noData
+        case urlError
+        case decodeError
     }
     
     func fetchData<T>(model: T.Type, url: String, completion: @escaping (NetworkResponse<T>) -> Void) where T: Decodable {
@@ -24,7 +24,7 @@ class WebService {
             
             if let error = error {
                 print(error.localizedDescription)
-                completion(.httpFail(.unknown))
+                completion(.httpFail(.urlError))
             } else if let data = data {
                 self.handleData(data: data, completion: completion)
             }
@@ -33,14 +33,14 @@ class WebService {
     }
     
     func handleData<T>(data: Data?, completion: @escaping (NetworkResponse<T>) -> Void) where T: Decodable {
-        guard let data = data else { return completion(.httpFail(.unknown)) }
+        guard let data = data else { return completion(.httpFail(.urlError)) }
         
         do {
             let result = try JSONDecoder().decode(T.self, from: data)
             completion(.httpSuccess(result))
         } catch {
             print(error.localizedDescription)
-            completion(.httpFail(.unknown))
+            completion(.httpFail(.decodeError))
         }
         
     }

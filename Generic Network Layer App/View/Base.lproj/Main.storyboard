@@ -24,18 +24,24 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Rick and Morty Characters"/>
                                         <connections>
-                                            <segue destination="dzV-Sn-GSg" kind="show" id="Uxo-gT-JxA"/>
+                                            <segue destination="dzV-Sn-GSg" kind="show" identifier="forRickAndMorty" id="Uxo-gT-JxA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFc-XD-Nyg">
                                         <rect key="frame" x="157.66666666666666" y="63" width="60" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="News"/>
+                                        <connections>
+                                            <segue destination="dzV-Sn-GSg" kind="show" identifier="forNews" id="sG1-vQ-IdS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYS-l3-D7E">
                                         <rect key="frame" x="116.66666666666669" y="126" width="142" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Crypto Currencies"/>
+                                        <connections>
+                                            <segue destination="dzV-Sn-GSg" kind="show" identifier="forCrypto" id="nSc-Vc-4Jg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -102,6 +108,9 @@
             <point key="canvasLocation" x="132" y="83.497536945812811"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nSc-Vc-4Jg"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

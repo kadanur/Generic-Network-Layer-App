@@ -12,50 +12,20 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("HomeVC loaded.")
-      //  fetchCryptos()
+        title = "Home"
     }
     
-    func fetchRaM() {
-        WebService().fetchData(model: RaMCharactersMain.self, url: "https://rickandmortyapi.com/api/character/") { result in
-            switch result {
-            case .httpFail(.unknown):
-                print("error")
-            case let .httpSuccess(RaMCharactersMain):
-                print("success")
-                print(RaMCharactersMain)
-            case .httpFail(.noData):
-                print("error2")
-            }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "forRickAndMorty" {
+            ListViewController.listType = ListTypes.RickAndMorty.rawValue
+        }
+        
+        if segue.identifier == "forNews" {
+            ListViewController.listType = ListTypes.News.rawValue
+        }
+        
+        if segue.identifier == "forCrypto" {
+            ListViewController.listType = ListTypes.Crypto.rawValue
         }
     }
-    
-    func fetchNews() {
-        WebService().fetchData(model: NewsModelMain.self, url: "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=17b2211c1a9b4c9aac76951ee93636d8") { result in
-            switch result {
-                case .httpFail(.unknown):
-                    print("error")
-                case let .httpSuccess(NewsModelMain):
-                    print("success")
-                    print(NewsModelMain)
-                case .httpFail(.noData):
-                    print("error2")
-            }
-        }
-    }
-    
-    func fetchCryptos() {
-        WebService().fetchData(model: [CryptoCurrency].self, url: "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json") { result in
-            switch result {
-            case .httpFail(.unknown):
-                print("error")
-            case let .httpSuccess(CryptoCurrency):
-                print("success")
-                print(CryptoCurrency)
-            case .httpFail(.noData):
-                print("error2")
-            }
-        }
-    }
-    
 }
