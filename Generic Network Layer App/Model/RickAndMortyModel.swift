@@ -8,7 +8,7 @@
 import Foundation
 
 struct RaMCharactersMain: Codable {
-    var _result: [RaMCharactersResult]
+    var results: [RaMCharactersResult]
 }
 
 struct RaMCharactersResult: Codable {
