@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		BA92D9A528004A75004E22CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA92D9A428004A75004E22CC /* AppDelegate.swift */; };
 		BA92D9A728004A75004E22CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA92D9A628004A75004E22CC /* SceneDelegate.swift */; };
-		BA92D9A928004A75004E22CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA92D9A828004A75004E22CC /* ViewController.swift */; };
 		BA92D9AC28004A75004E22CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA92D9AA28004A75004E22CC /* Main.storyboard */; };
 		BA92D9AE28004A76004E22CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA92D9AD28004A76004E22CC /* Assets.xcassets */; };
 		BA92D9B128004A76004E22CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA92D9AF28004A76004E22CC /* LaunchScreen.storyboard */; };
+		BA92D9BE28004B50004E22CC /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA92D9BD28004B50004E22CC /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA92D9A128004A75004E22CC /* Generic Network Layer App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Generic Network Layer App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA92D9A428004A75004E22CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA92D9A628004A75004E22CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA92D9A828004A75004E22CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA92D9AB28004A75004E22CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA92D9AD28004A76004E22CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA92D9B028004A76004E22CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA92D9B228004A76004E22CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA92D9BD28004B50004E22CC /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,55 @@
 		BA92D9A328004A75004E22CC /* Generic Network Layer App */ = {
 			isa = PBXGroup;
 			children = (
-				BA92D9A428004A75004E22CC /* AppDelegate.swift */,
-				BA92D9A628004A75004E22CC /* SceneDelegate.swift */,
-				BA92D9A828004A75004E22CC /* ViewController.swift */,
-				BA92D9AA28004A75004E22CC /* Main.storyboard */,
+				BA92D9BC28004AD1004E22CC /* App */,
+				BA92D9BB28004AC9004E22CC /* Service */,
+				BA92D9BA28004ABF004E22CC /* Model */,
+				BA92D9B928004A8B004E22CC /* ViewModel */,
+				BA92D9B828004A86004E22CC /* View */,
 				BA92D9AD28004A76004E22CC /* Assets.xcassets */,
 				BA92D9AF28004A76004E22CC /* LaunchScreen.storyboard */,
-				BA92D9B228004A76004E22CC /* Info.plist */,
 			);
 			path = "Generic Network Layer App";
+			sourceTree = "<group>";
+		};
+		BA92D9B828004A86004E22CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA92D9AA28004A75004E22CC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA92D9B928004A8B004E22CC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BA92D9BA28004ABF004E22CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA92D9BB28004AC9004E22CC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BA92D9BD28004B50004E22CC /* WebService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BA92D9BC28004AD1004E22CC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA92D9A428004A75004E22CC /* AppDelegate.swift */,
+				BA92D9A628004A75004E22CC /* SceneDelegate.swift */,
+				BA92D9B228004A76004E22CC /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA92D9A928004A75004E22CC /* ViewController.swift in Sources */,
+				BA92D9BE28004B50004E22CC /* WebService.swift in Sources */,
 				BA92D9A528004A75004E22CC /* AppDelegate.swift in Sources */,
 				BA92D9A728004A75004E22CC /* SceneDelegate.swift in Sources */,
 			);
@@ -291,7 +331,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3A8H2GTC36;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Generic Network Layer App/Info.plist";
+				INFOPLIST_FILE = "Generic Network Layer App/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +359,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3A8H2GTC36;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Generic Network Layer App/Info.plist";
+				INFOPLIST_FILE = "Generic Network Layer App/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
